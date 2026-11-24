@@ -1,70 +1,43 @@
 
 
-<div align="center">
+<h1 align="center">💧 Water Quality Monitoring System</h1>
 
+<p align="center">
+  <strong>Real-time Water Quality Monitoring with IoT &amp; Edge AI</strong>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white" alt="MQTT">
+</p>
 
-\# 💧 Water Quality Monitoring System
+<p align="center">
+  <img src="https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white" alt="Node-RED">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-In_Development-orange" alt="Status">
+  <img src="https://img.shields.io/badge/Platform-ESP32-blue" alt="Platform">
+  <img src="https://img.shields.io/badge/Edge_AI-INT8-green" alt="Edge AI">
+</p>
 
+<p align="center">
+  <a href="#-overview">Overview</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-edge-ai">Edge AI</a> •
+  <a href="#-repository-structure">Structure</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
-\*\*Real-time Water Quality Monitoring with IoT \& Edge AI\*\*
-
-
-
-!\[ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge\&logo=espressif\&logoColor=white)
-
-!\[C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
-
-!\[Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-
-!\[TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge\&logo=tensorflow\&logoColor=white)
-
-!\[MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge\&logo=mqtt\&logoColor=white)
-
-
-
-!\[Node-RED](https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge\&logo=nodered\&logoColor=white)
-
-!\[MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-
-!\[React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
-
-!\[Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-
-!\[Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-
-
-
-!\[Status](https://img.shields.io/badge/Status-In\_Development-orange)
-
-!\[Platform](https://img.shields.io/badge/Platform-ESP32-blue)
-
-!\[AI](https://img.shields.io/badge/Edge\_AI-INT8-green)
-
-
-
-\[Overview](#-overview) •
-
-\[Features](#-features) •
-
-\[Architecture](#-system-architecture) •
-
-\[Edge AI](#-edge-ai) •
-
-\[Structure](#-repository-structure) •
-
-\[Roadmap](#-roadmap)
-
-
-
-</div>
-
-
-
-\---
-
-
+<hr>
 
 \## 📖 Overview
 
