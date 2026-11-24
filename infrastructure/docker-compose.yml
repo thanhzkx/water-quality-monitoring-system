@@ -1,0 +1,62 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: water-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ***
+      MYSQL_DATABASE: water_monitor
+      MYSQL_USER: wateruser
+      MYSQL_PASSWORD: ***
+    command: --default-time-zone=+07:00
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - water-network
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: water-mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    networks:
+      - water-network
+
+  nodered:
+    image: nodered/node-red:latest
+    container_name: water-nodered
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered/data:/data
+    depends_on:
+      - mysql
+      - mosquitto
+    networks:
+      - water-network
+  api:
+    container_name: water-api
+    build:
+      context: ./api
+    environment:
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+    depends_on:
+      mysql:
+        condition: service_started
+    networks:
+      - water-network
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+networks:
+  water-network:
+    driver: bridge

@@ -1,0 +1,32 @@
+idf_component_register(
+    SRCS 
+        "water_monitor.c"
+        "wifi_manager/wifi_manager.c"
+        "mqtt/mqtt.c"
+        "sensors/ds18b20.c"
+        "sensors/ph_sensor.c"
+        "sensors/turbidity.c"
+        "utils/adc_utils.c"
+        "filter/filter.c"
+        "ai_anomaly.cpp"
+
+    INCLUDE_DIRS 
+        "."
+        "wifi_manager"
+        "mqtt"
+        "sensors"
+        "utils"
+        "filter"
+        "sensor_status"
+    REQUIRES
+        esp-tflite-micro
+        esp_adc
+        esp_event
+        mqtt
+        driver
+        nvs_flash
+        esp_wifi
+    PRIV_REQUIRES 
+                    esp_http_server
+                    json
+)

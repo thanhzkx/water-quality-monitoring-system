@@ -1,0 +1,1730 @@
+[
+    {
+        "id": "d202adfd03874078",
+        "type": "tab",
+        "label": "kết nối",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "669c09c766e36bb6",
+        "type": "tab",
+        "label": "xử lí và làm sạch",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c882ef36171e5406",
+        "type": "tab",
+        "label": "truy xuất dữ liệu",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8d56405365d8f659",
+        "type": "tab",
+        "label": "trạng thái thiết bị",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1c47f702e1aae6d5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "294be529a92a6361",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "60d5affeb27cea8a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "872554351ffee59e",
+        "type": "MySQLdatabase",
+        "name": "water_mysql",
+        "host": "mysql",
+        "port": "3306",
+        "db": "water_monitor",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "39d369cf5467fd9b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6764ebc17db42846",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ed71895b6885dd71",
+        "type": "ui_group",
+        "name": "WATER MONITORING SYSTEM   ",
+        "tab": "39d369cf5467fd9b",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0cbe89ca202dcbde",
+        "type": "ui_group",
+        "name": " Company Management",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "135804bee07578e5",
+        "type": "mqtt in",
+        "z": "d202adfd03874078",
+        "name": "MQTT - Sensor Data",
+        "topic": "factory/device/+/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "60d5affeb27cea8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "60a0c7edee256877",
+                "76d3f570bc6448e2"
+            ]
+        ]
+    },
+    {
+        "id": "60a0c7edee256877",
+        "type": "function",
+        "z": "d202adfd03874078",
+        "name": "Normalize MQTT Data",
+        "func": "let data = msg.payload;\n\n// Nếu MQTT payload là string JSON\nif (typeof data === \"string\") {\n    try {\n        data = JSON.parse(data);\n    } catch (e) {\n        node.error(\"Invalid JSON payload\", msg);\n        return null;\n    }\n}\n\n// Kiểm tra device_id\nif (!data.device_id) {\n    node.error(\"Missing device_id\", msg);\n    return null;\n}\n\n// Chuẩn hóa dữ liệu\nmsg.payload = {\n    device_id: data.device_id,\n    temperature: data.temp,\n    ph: data.ph,\n    turbidity: data.tur,\n\n    // Giữ lại status từ ESP32\n    status: {\n        temp: data.status?.temp ?? \"missing\",\n        ph: data.status?.ph ?? \"missing\",\n        tur: data.status?.tur ?? \"missing\"\n    },\n    ai_status: data.ai_status ?? \"UNKNOWN\",\n    created_at: new Date()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "989540dc2aabbe9e"
+            ]
+        ]
+    },
+    {
+        "id": "989540dc2aabbe9e",
+        "type": "function",
+        "z": "d202adfd03874078",
+        "name": "Insert Sensor Data",
+        "func": "let data = msg.payload;\n\nnode.warn(\"PAYLOAD = \" + JSON.stringify(data));\nnode.warn(\"TEMP = \" + data?.temperature);\nnode.warn(\"PH = \" + data?.ph);\nnode.warn(\"TUR = \" + data?.turbidity);\nnode.warn(\"AI STATUS = \" + data?.ai_status);\n\nif (!data || !data.device_id) {\n    node.error(\"Missing device_id\", msg);\n    return null;\n}\n\nmsg.topic = `\nINSERT INTO sensor_data\n(\n    device_id,\n    temperature,\n    ph,\n    turbidity,\n    temp_status,\n    ph_status,\n    tur_status,\n    ai_status\n)\nVALUES\n(\n    '${data.device_id}',\n    ${data.temperature ?? 0},\n    ${data.ph ?? 0},\n    ${data.turbidity ?? 0},\n    '${data.status?.temp ?? \"missing\"}',\n    '${data.status?.ph ?? \"missing\"}',\n    '${data.status?.tur ?? \"missing\"}',\n    '${data.ai_status ?? \"UNKNOWN\"}'\n)\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [
+                "427ee69418de6740"
+            ]
+        ]
+    },
+    {
+        "id": "427ee69418de6740",
+        "type": "mysql",
+        "z": "d202adfd03874078",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 1110,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76d3f570bc6448e2",
+        "type": "debug",
+        "z": "d202adfd03874078",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bdd79c557968338c",
+        "type": "inject",
+        "z": "669c09c766e36bb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "67de8e11705e526f"
+            ]
+        ]
+    },
+    {
+        "id": "67de8e11705e526f",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Read Raw Data",
+        "func": "let startDate = \"2026-07-28 00:00:00\";\n\nmsg.topic = `\nSELECT *\nFROM sensor_data\nWHERE created_at >= '${startDate}'\nORDER BY created_at;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "571b3970472e977f"
+            ]
+        ]
+    },
+    {
+        "id": "571b3970472e977f",
+        "type": "mysql",
+        "z": "669c09c766e36bb6",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 370,
+        "y": 600,
+        "wires": [
+            [
+                "9f58ee94dcfb6c61"
+            ]
+        ]
+    },
+    {
+        "id": "9f58ee94dcfb6c61",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Filter NULL",
+        "func": "let data = msg.payload;\n\n// Chỉ loại bỏ những dòng hoàn toàn không có dữ liệu sensor\nmsg.payload = data.filter(row => {\n    return !(\n        row.temperature === null &&\n        row.ph === null &&\n        row.turbidity === null\n    );\n});\n\nnode.warn(\n    \"Filter NULL: còn \" +\n    msg.payload.length +\n    \" dòng\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 320,
+        "wires": [
+            [
+                "acd4484e6459df54"
+            ]
+        ]
+    },
+    {
+        "id": "acd4484e6459df54",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Deduplication",
+        "func": "let data = msg.payload;\n\nlet seen = new Set();\nlet result = [];\n\nfor (let row of data) {\n\n    // Khóa để xác định bản ghi trùng\n    let key =\n        row.device_id + \"|\" +\n        row.created_at + \"|\" +\n        row.temperature + \"|\" +\n        row.ph + \"|\" +\n        row.turbidity;\n\n    if (!seen.has(key)) {\n        seen.add(key);\n        result.push(row);\n    }\n}\n\nmsg.payload = result;\n\nnode.warn(\n    \"Deduplication: còn \" +\n    result.length +\n    \" dòng\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "6a38ae125b9a959e"
+            ]
+        ]
+    },
+    {
+        "id": "6a38ae125b9a959e",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Resampling",
+        "func": "let data = msg.payload;\n\nconst SAMPLE_TIME = 6000;      // 6 giây\nconst MAX_INTERPOLATE = 2;     // tối đa nội suy 2 mẫu\n\nif (!Array.isArray(data)) {\n    node.error(\"Payload không phải array\");\n    return null;\n}\n\n// Chia dữ liệu theo device_id\nlet groups = {};\n\nfor (const row of data) {\n\n    const deviceId = row.device_id;\n\n    if (!deviceId) {\n        node.warn(\"Dòng không có device_id\");\n        continue;\n    }\n\n    if (!groups[deviceId]) {\n        groups[deviceId] = [];\n    }\n\n    groups[deviceId].push(row);\n}\n\n// Resampling riêng từng device\nlet result = [];\n\nfor (const deviceId of Object.keys(groups)) {\n\n    let deviceData = groups[deviceId];\n\n    // Đảm bảo thứ tự thời gian\n    deviceData.sort((a, b) =>\n        new Date(a.created_at).getTime() -\n        new Date(b.created_at).getTime()\n    );\n\n    for (let i = 0; i < deviceData.length - 1; i++) {\n\n        let current = deviceData[i];\n        let next = deviceData[i + 1];\n\n        result.push(current);\n\n        let t1 = new Date(current.created_at).getTime();\n        let t2 = new Date(next.created_at).getTime();\n\n        let diff = t2 - t1;\n\n        let missing =\n            Math.round(diff / SAMPLE_TIME) - 1;\n\n        // Khoảng trống nhỏ\n        if (\n            missing > 0 &&\n            missing <= MAX_INTERPOLATE\n        ) {\n\n            for (let j = 1; j <= missing; j++) {\n\n                result.push({\n\n                    id: null,\n\n                    device_id: deviceId,\n\n                    temperature: null,\n                    ph: null,\n                    turbidity: null,\n\n                    created_at:\n                        new Date(\n                            t1 + SAMPLE_TIME * j\n                        ).toISOString(),\n\n                    temp_status: \"missing\",\n                    ph_status: \"missing\",\n                    tur_status: \"missing\"\n\n                });\n\n            }\n        }\n\n        // Khoảng trống lớn\n        else if (missing > MAX_INTERPOLATE) {\n\n            node.warn(\n                \"Khoảng trống lớn [\" +\n                deviceId +\n                \"]: \" +\n                current.created_at +\n                \" -> \" +\n                next.created_at\n            );\n\n        }\n    }\n\n    // Thêm dòng cuối của device\n    if (deviceData.length > 0) {\n        result.push(\n            deviceData[deviceData.length - 1]\n        );\n    }\n}\n\n// Sắp xếp lại toàn bộ dữ liệu\nresult.sort((a, b) =>\n    new Date(a.created_at).getTime() -\n    new Date(b.created_at).getTime()\n);\n\nmsg.payload = result;\n\nnode.warn(\n    \"Resampling: \" +\n    data.length +\n    \" -> \" +\n    result.length +\n    \" dòng\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 500,
+        "wires": [
+            [
+                "75fec0c4658aa41e"
+            ]
+        ]
+    },
+    {
+        "id": "75fec0c4658aa41e",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Rolling IQR",
+        "func": "let data = msg.payload;\n\nconst WINDOW = 23;\n\nif (!Array.isArray(data)) {\n    node.error(\"Payload không phải array\");\n    return null;\n}\n\n// Tính phân vị\nfunction percentile(arr, p) {\n\n    let index = (arr.length - 1) * p;\n\n    let lower = Math.floor(index);\n    let upper = Math.ceil(index);\n\n    if (lower === upper)\n        return arr[lower];\n\n    return arr[lower] +\n        (arr[upper] - arr[lower]) *\n        (index - lower);\n}\n\n// Chia dữ liệu theo device\nlet groups = {};\n\nfor (const row of data) {\n\n    const deviceId = row.device_id;\n\n    if (!deviceId) {\n        node.warn(\"Dòng không có device_id\");\n        continue;\n    }\n\n    if (!groups[deviceId]) {\n        groups[deviceId] = [];\n    }\n\n    groups[deviceId].push(row);\n}\n\n// IQR riêng từng device\nfor (const deviceId of Object.keys(groups)) {\n\n    let deviceData = groups[deviceId];\n\n    function processIQR(column) {\n\n        for (let i = 0; i < deviceData.length; i++) {\n\n            let start = Math.max(\n                0,\n                i - Math.floor(WINDOW / 2)\n            );\n\n            let end = Math.min(\n                deviceData.length,\n                i + Math.floor(WINDOW / 2) + 1\n            );\n\n            let window = deviceData\n                .slice(start, end)\n                .map(x => x[column])\n                .filter(v =>\n                    v !== null &&\n                    v !== undefined &&\n                    !isNaN(v)\n                )\n                .sort((a, b) => a - b);\n\n            if (window.length < 4)\n                continue;\n\n            let Q1 = percentile(window, 0.25);\n            let Q3 = percentile(window, 0.75);\n\n            let IQR = Q3 - Q1;\n\n            let lower = Q1 - 1.5 * IQR;\n            let upper = Q3 + 1.5 * IQR;\n\n            if (\n                deviceData[i][column] !== null &&\n                deviceData[i][column] !== undefined &&\n                (\n                    deviceData[i][column] < lower ||\n                    deviceData[i][column] > upper\n                )\n            ) {\n\n                deviceData[i][column] = null;\n\n            }\n        }\n    }\n\n    processIQR(\"temperature\");\n    processIQR(\"ph\");\n    processIQR(\"turbidity\");\n}\n\n// Gộp dữ liệu lại\nlet result = [];\n\nfor (const deviceId of Object.keys(groups)) {\n\n    result.push(\n        ...groups[deviceId]\n    );\n\n}\n\n// Giữ thứ tự thời gian\nresult.sort((a, b) =>\n    new Date(a.created_at).getTime() -\n    new Date(b.created_at).getTime()\n);\n\nmsg.payload = result;\n\nnode.warn(\n    \"Rolling IQR xong: \" +\n    result.length +\n    \" dòng\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "9106da8b3eb542bd"
+            ]
+        ]
+    },
+    {
+        "id": "9106da8b3eb542bd",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Interpolation",
+        "func": "let data = msg.payload;\n\nconst MAX_GAP = 2;\n\nif (!Array.isArray(data)) {\n    node.error(\"Payload không phải array\");\n    return null;\n}\n\n// Chia dữ liệu theo device\nlet groups = {};\n\nfor (const row of data) {\n\n    const deviceId = row.device_id;\n\n    if (!deviceId) {\n        node.warn(\"Dòng không có device_id\");\n        continue;\n    }\n\n    if (!groups[deviceId]) {\n        groups[deviceId] = [];\n    }\n\n    groups[deviceId].push(row);\n}\n\n// Nội suy riêng từng device\nfunction interpolate(deviceData, column) {\n\n    let i = 0;\n\n    while (i < deviceData.length) {\n\n        if (\n            deviceData[i][column] !== null &&\n            deviceData[i][column] !== undefined\n        ) {\n            i++;\n            continue;\n        }\n\n        let start = i - 1;\n        let end = i;\n\n        while (\n            end < deviceData.length &&\n            (\n                deviceData[end][column] === null ||\n                deviceData[end][column] === undefined\n            )\n        ) {\n            end++;\n        }\n\n        let gap = end - start - 1;\n\n        if (\n            start >= 0 &&\n            end < deviceData.length &&\n            gap <= MAX_GAP\n        ) {\n\n            let first =\n                Number(deviceData[start][column]);\n\n            let last =\n                Number(deviceData[end][column]);\n\n            let step =\n                (last - first) /\n                (gap + 1);\n\n            for (let k = 1; k <= gap; k++) {\n\n                deviceData[start + k][column] =\n                    Number(\n                        (\n                            first +\n                            step * k\n                        ).toFixed(2)\n                    );\n            }\n        }\n\n        i = end;\n    }\n}\n\nfor (const deviceId of Object.keys(groups)) {\n\n    let deviceData = groups[deviceId];\n\n    // Sắp xếp theo thời gian tăng dần\n    deviceData.sort((a, b) =>\n        new Date(a.created_at).getTime() -\n        new Date(b.created_at).getTime()\n    );\n\n    interpolate(deviceData, \"temperature\");\n    interpolate(deviceData, \"ph\");\n    interpolate(deviceData, \"turbidity\");\n}\n\n// Gộp dữ liệu\nlet result = [];\n\nfor (const deviceId of Object.keys(groups)) {\n\n    result.push(\n        ...groups[deviceId]\n    );\n}\n\n// Sắp xếp lại theo thời gian\nresult.sort((a, b) =>\n    new Date(a.created_at).getTime() -\n    new Date(b.created_at).getTime()\n);\n\nmsg.payload = result;\n\nnode.warn(\n    \"Interpolation xong: \" +\n    result.length +\n    \" dòng\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "bcf1774e706c9159"
+            ]
+        ]
+    },
+    {
+        "id": "bcf1774e706c9159",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Clear Clean Table",
+        "func": "let cleanData = msg.payload;\n\nmsg.cleanData = cleanData;\n\nmsg.topic = `DELETE FROM sensor_data_clean;`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "f54af7d4ea93a2c7"
+            ]
+        ]
+    },
+    {
+        "id": "f54af7d4ea93a2c7",
+        "type": "mysql",
+        "z": "669c09c766e36bb6",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 970,
+        "y": 440,
+        "wires": [
+            [
+                "f151247dcd02e937"
+            ]
+        ]
+    },
+    {
+        "id": "f151247dcd02e937",
+        "type": "function",
+        "z": "669c09c766e36bb6",
+        "name": "Insert Clean Data",
+        "func": "let rows = msg.cleanData;\nlet sql = [];\n\nfunction formatMySQLDate(dateValue) {\n\n    let d = new Date(dateValue);\n\n    if (isNaN(d.getTime())) {\n        throw new Error(\n            \"Invalid created_at: \" +\n            dateValue\n        );\n    }\n\n    return d.getFullYear() + \"-\" +\n        String(d.getMonth() + 1).padStart(2, \"0\") + \"-\" +\n        String(d.getDate()).padStart(2, \"0\") + \" \" +\n        String(d.getHours()).padStart(2, \"0\") + \":\" +\n        String(d.getMinutes()).padStart(2, \"0\") + \":\" +\n        String(d.getSeconds()).padStart(2, \"0\");\n}\n\nfor (let row of rows) {\n\n    if (!row.device_id) {\n\n        node.warn(\n            \"Missing device_id at created_at: \" +\n            row.created_at\n        );\n\n        continue;\n    }\n\n    let createdAt =\n        formatMySQLDate(row.created_at);\n\n    sql.push(`\n    INSERT INTO sensor_data_clean\n    (\n        device_id,\n        temperature,\n        ph,\n        turbidity,\n        created_at,\n        temp_status,\n        ph_status,\n        tur_status\n    )\n    VALUES\n    (\n        '${row.device_id}',\n        ${row.temperature === null ? \"NULL\" : row.temperature},\n        ${row.ph === null ? \"NULL\" : row.ph},\n        ${row.turbidity === null ? \"NULL\" : row.turbidity},\n        '${createdAt}',\n        ${row.temp_status ? `'${row.temp_status}'` : \"NULL\"},\n        ${row.ph_status ? `'${row.ph_status}'` : \"NULL\"},\n        ${row.tur_status ? `'${row.tur_status}'` : \"NULL\"}\n    );\n    `);\n}\n\nmsg.topic = sql.join(\"\\n\");\n\nnode.warn(\n    \"Insert Clean Data: \" +\n    sql.length +\n    \" rows\"\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 540,
+        "wires": [
+            [
+                "d3d2338f6d0d79ab",
+                "23c295b9b6b70624"
+            ]
+        ]
+    },
+    {
+        "id": "d3d2338f6d0d79ab",
+        "type": "mysql",
+        "z": "669c09c766e36bb6",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 970,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23c295b9b6b70624",
+        "type": "debug",
+        "z": "669c09c766e36bb6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e977c8d213a36fbf",
+        "type": "inject",
+        "z": "c882ef36171e5406",
+        "name": "Refresh Device List",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "959011de27d1a685"
+            ]
+        ]
+    },
+    {
+        "id": "f88b4991ab7296aa",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Prepare Device Options",
+        "func": "let devices = msg.payload;\n\n// MySQL trả thẳng array\nif (!Array.isArray(devices)) {\n    node.error(\"MySQL không trả về danh sách devices\", msg);\n    return null;\n}\n\n// Lưu danh sách device\nflow.set(\"deviceList\", devices);\n\n// ===============================\n// AUTO SELECT DEVICE\n// ===============================\n\nlet selectedId = flow.get(\"selectedDevice\");\n\nlet selected = devices.find(\n    d => d.device_id === selectedId\n);\n\n// Nếu chưa có device → chọn device đầu tiên\nif (!selected && devices.length > 0) {\n\n    selected = devices[0];\n\n    flow.set(\n        \"selectedDevice\",\n        selected.device_id\n    );\n\n    flow.set(\n        \"selectedDeviceName\",\n        selected.machine_name || selected.device_id\n    );\n}\n\n// ===============================\n// DROPDOWN OPTIONS\n// ===============================\n\n// GIỮ ĐÚNG KIỂU CŨ\n// machine01 → device_id\n\nmsg.options = devices.map(d => ({\n    [d.machine_name || d.device_id]: d.device_id\n}));\n\n// Giá trị đang chọn\nmsg.payload = selected\n    ? selected.device_id\n    : null;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 80,
+        "wires": [
+            [
+                "9cea6ed1612368e2"
+            ]
+        ]
+    },
+    {
+        "id": "9cea6ed1612368e2",
+        "type": "ui_dropdown",
+        "z": "c882ef36171e5406",
+        "name": "Select Device",
+        "label": "Select Device",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ed71895b6885dd71",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 940,
+        "y": 80,
+        "wires": [
+            [
+                "457579481dfd1339"
+            ]
+        ]
+    },
+    {
+        "id": "457579481dfd1339",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Set Selected Device",
+        "func": "let selectedId = msg.payload;\n\nif (!selectedId) {\n\n    node.warn(\"Không có device được chọn\");\n\n    return null;\n}\n\nlet devices = flow.get(\"deviceList\") || [];\n\nif (!Array.isArray(devices)) {\n\n    node.warn(\"deviceList không hợp lệ\");\n\n    return null;\n}\n\nlet device = devices.find(\n    d => d.device_id === selectedId\n);\n\nif (!device) {\n\n    node.warn(\n        \"Không tìm thấy device ID: \" + selectedId\n    );\n\n    return null;\n}\n\n// ===============================\n// LƯU DEVICE ID THẬT\n// ===============================\n\nflow.set(\n    \"selectedDevice\",\n    device.device_id\n);\n\n// ===============================\n// LƯU TÊN ĐỂ HIỂN THỊ\n// ===============================\n\nflow.set(\n    \"selectedDeviceName\",\n    device.machine_name\n);\n\nnode.warn(\n    \"SELECTED = \" +\n    device.machine_name +\n    \" | ID = \" +\n    device.device_id\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            [
+                "2d66a9ba9cf94d23"
+            ]
+        ]
+    },
+    {
+        "id": "eaf25fb7a0363a5c",
+        "type": "mqtt in",
+        "z": "c882ef36171e5406",
+        "name": "",
+        "topic": "factory/device/+/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "60d5affeb27cea8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "70aedaf41635f783"
+            ]
+        ]
+    },
+    {
+        "id": "70aedaf41635f783",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Store Latest Sensor",
+        "func": "if (!msg.payload || !msg.payload.device_id) {\n\n    node.warn(\"Missing device_id\");\n\n    return null;\n\n}\n\nconst deviceId = msg.payload.device_id;\n\nlet sensors = flow.get(\"latestSensors\") || {};\n\nsensors[deviceId] = {\n\n    temp: msg.payload.temp,\n\n    ph: msg.payload.ph,\n\n    tur: msg.payload.tur,\n\n    timestamp: msg.payload.timestamp,\n\n    status: msg.payload.status || {},\n\n    ai_status: msg.payload.ai_status || \"UNKNOWN\"\n\n};\n\nflow.set(\"latestSensors\", sensors);\n\nconst selected = flow.get(\"selectedDevice\");\n\nnode.warn(\n    \"MQTT ID = \" + deviceId +\n    \" | SELECTED ID = \" + selected\n);\n\n// Không phải device đang chọn → chỉ lưu\nif (!selected || deviceId !== selected) {\n\n    return null;\n\n}\n\nnode.warn(\n    \"SEND SENSOR | TEMP=\" + msg.payload.temp +\n    \" | PH=\" + msg.payload.ph +\n    \" | TUR=\" + msg.payload.tur +\n    \" | AI=\" + (msg.payload.ai_status || \"UNKNOWN\")\n);\n\n// Device đang chọn → gửi 4 giá trị\n\nreturn [\n\n    {\n        topic: \"Temperature\",\n        payload: msg.payload.temp\n    },\n\n    {\n        topic: \"pH\",\n        payload: msg.payload.ph\n    },\n\n    {\n        topic: \"Turbidity\",\n        payload: msg.payload.tur\n    },\n\n    {\n        topic: \"AI Status\",\n        payload: msg.payload.ai_status || \"UNKNOWN\"\n    }\n\n];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "8a45c9fea8f4b0c8"
+            ],
+            [
+                "b3cf623f5af34599"
+            ],
+            [
+                "3b1b51d579c43f3b"
+            ],
+            [
+                "140f10567e91829d"
+            ]
+        ]
+    },
+    {
+        "id": "2d66a9ba9cf94d23",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Show Selected Sensor",
+        "func": "const selected = flow.get(\"selectedDevice\");\n\nif (!selected) {\n    node.warn(\"No device selected\");\n\n    return [\n        { payload: null },\n        { payload: null },\n        { payload: null },\n        { payload: null }\n    ];\n}\n\nconst sensors = flow.get(\"latestSensors\") || {};\n\nconst sensor = sensors[selected];\n\nnode.warn(\n    \"SHOW SELECTED = \" +\n    selected +\n    \" | DATA = \" +\n    JSON.stringify(sensor)\n);\n\n// Device chưa có dữ liệu\n\nif (!sensor) {\n\n    node.warn(\"Device chưa có sensor data\");\n\n    return [\n        { payload: null },\n        { payload: null },\n        { payload: null },\n        { payload: null }\n    ];\n}\n\n// Có dữ liệu\n\nreturn [\n    {\n        topic: \"Temperature\",\n        payload: sensor.temp\n    },\n\n    {\n        topic: \"pH\",\n        payload: sensor.ph\n    },\n\n    {\n        topic: \"Turbidity\",\n        payload: sensor.tur\n    },\n\n    {\n        topic: \"AI Status\",\n        payload: sensor.ai_status || \"UNKNOWN\"\n    }\n];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "8a45c9fea8f4b0c8"
+            ],
+            [
+                "b3cf623f5af34599"
+            ],
+            [
+                "3b1b51d579c43f3b"
+            ],
+            [
+                "140f10567e91829d"
+            ]
+        ]
+    },
+    {
+        "id": "8a45c9fea8f4b0c8",
+        "type": "ui_template",
+        "z": "c882ef36171e5406",
+        "group": "ed71895b6885dd71",
+        "name": "Temperature",
+        "order": 8,
+        "width": "7.5",
+        "height": "5",
+        "format": "<div class=\"sensor-card\">\n\n    <div class=\"sensor-header\">\n        <div class=\"sensor-icon\">🌡️</div>\n\n        <div>\n            <div class=\"sensor-title\">TEMPERATURE</div>\n            <div class=\"sensor-subtitle\">Water temperature</div>\n        </div>\n    </div>\n\n    <div class=\"sensor-value\">\n        {{msg.payload}} <span>°C</span>\n    </div>\n\n</div>\n\n<style>\n.sensor-card {\n    height: 155px;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 18px;\n    background: white;\n    box-shadow: 0 4px 16px rgba(0,0,0,0.07);\n}\n\n.sensor-header {\n    height: 48px;\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.sensor-icon {\n    width: 32px;\n    text-align: center;\n    font-size: 25px;\n}\n\n.sensor-title {\n    font-size: 15px;\n    font-weight: 700;\n}\n\n.sensor-subtitle {\n    margin-top: 4px;\n    font-size: 11px;\n    color: #888;\n}\n\n.sensor-value {\n    margin-top: 20px;\n    font-size: 34px;\n    font-weight: 700;\n}\n\n.sensor-value span {\n    font-size: 16px;\n    color: #666;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b1b51d579c43f3b",
+        "type": "ui_template",
+        "z": "c882ef36171e5406",
+        "group": "ed71895b6885dd71",
+        "name": "Turbidity",
+        "order": 10,
+        "width": "7.5",
+        "height": "5",
+        "format": "<div class=\"sensor-card\">\n\n    <div class=\"sensor-header\">\n        <div class=\"sensor-icon\">💧</div>\n\n        <div>\n            <div class=\"sensor-title\">TURBIDITY</div>\n            <div class=\"sensor-subtitle\">Water clarity</div>\n        </div>\n    </div>\n\n    <div class=\"sensor-value\">\n        {{msg.payload}} <span>NTU</span>\n    </div>\n\n</div>\n\n<style>\n    .sensor-card {\n        height: 155px;\n        padding: 20px;\n        box-sizing: border-box;\n        border-radius: 18px;\n        background: white;\n        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);\n    }\n\n    .sensor-header {\n        height: 48px;\n        display: flex;\n        align-items: center;\n        gap: 12px;\n    }\n\n    .sensor-icon {\n        width: 32px;\n        text-align: center;\n        font-size: 25px;\n    }\n\n    .sensor-title {\n        font-size: 15px;\n        font-weight: 700;\n    }\n\n    .sensor-subtitle {\n        margin-top: 4px;\n        font-size: 11px;\n        color: #888;\n    }\n\n    .sensor-value {\n        margin-top: 20px;\n        font-size: 34px;\n        font-weight: 700;\n    }\n\n    .sensor-value span {\n        font-size: 16px;\n        color: #666;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 920,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3cf623f5af34599",
+        "type": "ui_template",
+        "z": "c882ef36171e5406",
+        "group": "ed71895b6885dd71",
+        "name": "pH",
+        "order": 9,
+        "width": "7.5",
+        "height": "5",
+        "format": "<div class=\"sensor-card\">\n\n    <div class=\"sensor-header\">\n        <div class=\"sensor-icon\">🧪</div>\n\n        <div>\n            <div class=\"sensor-title\">pH LEVEL</div>\n            <div class=\"sensor-subtitle\">Water acidity</div>\n        </div>\n    </div>\n\n    <div class=\"sensor-value\">\n        {{msg.payload}}\n    </div>\n\n</div>\n\n<style>\n    .sensor-card {\n        height: 155px;\n        padding: 20px;\n        box-sizing: border-box;\n        border-radius: 18px;\n        background: white;\n        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);\n    }\n\n    .sensor-header {\n        height: 48px;\n        display: flex;\n        align-items: center;\n        gap: 12px;\n    }\n\n    .sensor-icon {\n        width: 32px;\n        text-align: center;\n        font-size: 25px;\n    }\n\n    .sensor-title {\n        font-size: 15px;\n        font-weight: 700;\n    }\n\n    .sensor-subtitle {\n        margin-top: 4px;\n        font-size: 11px;\n        color: #888;\n    }\n\n    .sensor-value {\n        margin-top: 20px;\n        font-size: 34px;\n        font-weight: 700;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "140f10567e91829d",
+        "type": "ui_template",
+        "z": "c882ef36171e5406",
+        "group": "ed71895b6885dd71",
+        "name": "AI Status",
+        "order": 11,
+        "width": "7.5",
+        "height": "5",
+        "format": "<div class=\"sensor-card ai-card\">\n\n    <div class=\"sensor-header\">\n        <div class=\"sensor-icon\">🤖</div>\n\n        <div>\n            <div class=\"sensor-title\">AI ANOMALY DETECTION</div>\n            <div class=\"sensor-subtitle\">Water quality analysis</div>\n        </div>\n    </div>\n\n    <div class=\"sensor-value ai-value\">\n        {{msg.payload}}\n    </div>\n\n</div>\n\n<style>\n    .sensor-card {\n        height: 155px;\n        padding: 20px;\n        box-sizing: border-box;\n        border-radius: 18px;\n        background: #f4faff;\n        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);\n    }\n\n    .sensor-header {\n        height: 48px;\n        display: flex;\n        align-items: center;\n        gap: 12px;\n    }\n\n    .sensor-icon {\n        width: 32px;\n        text-align: center;\n        font-size: 25px;\n    }\n\n    .sensor-title {\n        font-size: 15px;\n        font-weight: 700;\n    }\n\n    .sensor-subtitle {\n        margin-top: 4px;\n        font-size: 11px;\n        color: #888;\n    }\n\n    .sensor-value {\n        margin-top: 20px;\n        font-size: 34px;\n        font-weight: 700;\n    }\n\n    .ai-value {\n        font-size: 30px;\n        letter-spacing: 0.5px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 920,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42f4e6895cf9e5c0",
+        "type": "ui_date_picker",
+        "z": "c882ef36171e5406",
+        "name": "History Date",
+        "label": "date",
+        "group": "ed71895b6885dd71",
+        "order": 12,
+        "width": "30",
+        "height": "1",
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "0507b96b5c4bda8c"
+            ]
+        ]
+    },
+    {
+        "id": "0507b96b5c4bda8c",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Prepare History Query",
+        "func": "const deviceId = flow.get(\"selectedDevice\");\nlet selectedDate = msg.payload;\n\nif (!deviceId) {\n    node.warn(\"HISTORY: Chưa có device được chọn\");\n    return null;\n}\n\nif (!selectedDate) {\n    node.warn(\"HISTORY: Chưa có ngày được chọn\");\n    return null;\n}\n\nif (\n    typeof selectedDate === \"number\" &&\n    isFinite(selectedDate)\n) {\n    const d = new Date(selectedDate);\n\n    if (isNaN(d.getTime())) {\n        node.warn(\n            \"HISTORY: Timestamp không hợp lệ = \" +\n            selectedDate\n        );\n        return null;\n    }\n\n    selectedDate = d.toISOString().slice(0, 10);\n}\n\nelse if (selectedDate instanceof Date) {\n\n    selectedDate = selectedDate\n        .toISOString()\n        .slice(0, 10);\n}\n\nelse {\n\n    selectedDate = String(selectedDate);\n\n    if (selectedDate.includes(\"T\")) {\n        selectedDate = selectedDate.split(\"T\")[0];\n    }\n\n    else if (/^\\d{2}\\/\\d{2}\\/\\d{4}$/.test(selectedDate)) {\n\n        const p = selectedDate.split(\"/\");\n\n        selectedDate =\n            `${p[2]}-${p[1]}-${p[0]}`;\n    }\n}\n\nif (!/^\\d{4}-\\d{2}-\\d{2}$/.test(selectedDate)) {\n\n    node.warn(\n        \"HISTORY: Ngày không hợp lệ = \" +\n        selectedDate\n    );\n\n    return null;\n}\n\nmsg.topic = `\nSELECT\n    device_id,\n    temperature,\n    ph,\n    turbidity,\n    temp_status,\n    ph_status,\n    tur_status,\n    created_at\nFROM sensor_data_clean\nWHERE device_id = ?\n  AND created_at >= ?\n  AND created_at < DATE_ADD(?, INTERVAL 1 DAY)\nORDER BY created_at ASC\n`;\n\nmsg.payload = [\n    deviceId,\n    selectedDate + \" 00:00:00\",\n    selectedDate + \" 00:00:00\"\n];\n\nnode.warn(\n    \"HISTORY QUERY | DEVICE=\" +\n    deviceId +\n    \" | DATE=\" +\n    selectedDate\n);\n\nnode.warn(\n    \"SQL PARAMS = \" +\n    JSON.stringify(msg.payload)\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "9095156fc048778e"
+            ]
+        ]
+    },
+    {
+        "id": "9095156fc048778e",
+        "type": "mysql",
+        "z": "c882ef36171e5406",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 630,
+        "y": 540,
+        "wires": [
+            [
+                "9982d75edda5c1cb"
+            ]
+        ]
+    },
+    {
+        "id": "9982d75edda5c1cb",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Format History",
+        "func": "let rows = msg.payload;\n\nif (!Array.isArray(rows)) {\n    node.error(\"HISTORY: payload không phải array\", msg);\n    return null;\n}\n\nlet temp = [];\nlet ph = [];\nlet tur = [];\n\nrows.forEach(row => {\n\n    let t = new Date(row.created_at);\n\n    if (isNaN(t.getTime())) {\n        return;\n    }\n\n    if (row.temperature != null) {\n\n        let value = Number(row.temperature);\n\n        if (isFinite(value)) {\n            temp.push({\n                x: t.getTime(),\n                y: value\n            });\n        }\n    }\n\n    if (row.ph != null) {\n\n        let value = Number(row.ph);\n\n        if (isFinite(value)) {\n            ph.push({\n                x: t.getTime(),\n                y: value\n            });\n        }\n    }\n\n    if (row.turbidity != null) {\n\n        let value = Number(row.turbidity);\n\n        if (isFinite(value)) {\n            tur.push({\n                x: t.getTime(),\n                y: value\n            });\n        }\n    }\n\n});\n\nnode.warn(\n    \"HISTORY CHART | TEMP=\" + temp.length +\n    \" | PH=\" + ph.length +\n    \" | TUR=\" + tur.length\n);\n\nnode.send([\n    {\n        topic: \"Temperature\",\n        reset: true,\n        payload: []\n    },\n    {\n        topic: \"pH\",\n        reset: true,\n        payload: []\n    },\n    {\n        topic: \"Turbidity\",\n        reset: true,\n        payload: []\n    }\n]);\n\nif (\n    temp.length === 0 &&\n    ph.length === 0 &&\n    tur.length === 0\n) {\n    node.warn(\"HISTORY: Không có dữ liệu để vẽ\");\n    return null;\n}\n\nreturn [\n    {\n        topic: \"Temperature\",\n        payload: [\n            {\n                series: [\"Temperature\"],\n                data: [temp]\n            }\n        ]\n    },\n    {\n        topic: \"pH\",\n        payload: [\n            {\n                series: [\"pH\"],\n                data: [ph]\n            }\n        ]\n    },\n    {\n        topic: \"Turbidity\",\n        payload: [\n            {\n                series: [\"Turbidity\"],\n                data: [tur]\n            }\n        ]\n    }\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 540,
+        "wires": [
+            [
+                "e55b5c6410ca6a99"
+            ],
+            [
+                "60932f45a6c8ae3e"
+            ],
+            [
+                "b3b085060e891065"
+            ]
+        ]
+    },
+    {
+        "id": "e55b5c6410ca6a99",
+        "type": "ui_chart",
+        "z": "c882ef36171e5406",
+        "name": "Temperature Chart",
+        "group": "ed71895b6885dd71",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature History",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-100",
+        "ymax": "150",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#dc2e2e",
+            "#ff9896",
+            "#68c0ae",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1130,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60932f45a6c8ae3e",
+        "type": "ui_chart",
+        "z": "c882ef36171e5406",
+        "name": "pH chart",
+        "group": "ed71895b6885dd71",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "label": "ph history",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#68addf",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3b085060e891065",
+        "type": "ui_chart",
+        "z": "c882ef36171e5406",
+        "name": "Tur chart",
+        "group": "ed71895b6885dd71",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "label": "tur history",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "4000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#aab2a9",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8e8172da818107a",
+        "type": "mysql",
+        "z": "c882ef36171e5406",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "f88b4991ab7296aa"
+            ]
+        ]
+    },
+    {
+        "id": "959011de27d1a685",
+        "type": "function",
+        "z": "c882ef36171e5406",
+        "name": "Get Device List Query",
+        "func": "msg.topic = `\nSELECT device_id, machine_name, status, last_seen\nFROM devices\nORDER BY machine_name ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "d8e8172da818107a"
+            ]
+        ]
+    },
+    {
+        "id": "3acf78dee1b0d022",
+        "type": "inject",
+        "z": "8d56405365d8f659",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "6406e795d998ea54"
+            ]
+        ]
+    },
+    {
+        "id": "9e0f6d1d62408353",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "Prepare Stats",
+        "func": "let devices = msg.payload;\n\nif (!Array.isArray(devices)) {\n    node.error(\"Invalid devices data\", msg);\n    return null;\n}\n\nconst total = devices.length;\n\nconst online = devices.filter(\n    d => String(d.status || \"\").trim().toLowerCase() === \"online\"\n).length;\n\nconst offline = total - online;\n\nmsg.payload = {\n    total: total,\n    online: online,\n    offline: offline\n};\n\nreturn [\n    msg,\n    msg,\n    msg\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 580,
+        "wires": [
+            [
+                "12194c3a8552e99b"
+            ],
+            [
+                "2775b3bb68df6946"
+            ],
+            [
+                "96a2c129a0a04b72"
+            ]
+        ]
+    },
+    {
+        "id": "12194c3a8552e99b",
+        "type": "ui_template",
+        "z": "8d56405365d8f659",
+        "group": "ed71895b6885dd71",
+        "name": "Total Devices",
+        "order": 5,
+        "width": "10",
+        "height": "3",
+        "format": "<div class=\"stat-card\">\n    <div class=\"stat-icon\">🖥️</div>\n    <div class=\"stat-content\">\n        <div class=\"stat-title\">TOTAL DEVICES</div>\n        <div class=\"stat-value\">{{msg.payload.total}}</div>\n        \n    </div>\n</div>\n\n<style>\n.stat-card {\n    height: 125px;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 18px;\n    background: white;\n    box-shadow: 0 4px 16px rgba(0,0,0,0.07);\n    display: flex;\n    align-items: center;\n    gap: 16px;\n}\n\n.stat-icon {\n    font-size: 30px;\n}\n\n.stat-title {\n    font-size: 13px;\n    font-weight: 600;\n    color: #777;\n}\n\n.stat-value {\n    margin-top: 4px;\n    font-size: 34px;\n    font-weight: 700;\n}\n\n.stat-subtitle {\n    margin-top: 2px;\n    font-size: 11px;\n    color: #999;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 950,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2775b3bb68df6946",
+        "type": "ui_template",
+        "z": "8d56405365d8f659",
+        "group": "ed71895b6885dd71",
+        "name": "Online Devices",
+        "order": 3,
+        "width": "10",
+        "height": "3",
+        "format": "<div class=\"stat-card\">\n    <div class=\"stat-icon\">🟢</div>\n    <div class=\"stat-content\">\n        <div class=\"stat-title\">ONLINE</div>\n        <div class=\"stat-value\">{{msg.payload.online}}</div>\n        \n    </div>\n</div>\n\n<style>\n    .stat-card {\n        height: 125px;\n        padding: 20px;\n        box-sizing: border-box;\n        border-radius: 18px;\n        background: white;\n        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);\n        display: flex;\n        align-items: center;\n        gap: 16px;\n    }\n\n    .stat-icon {\n        font-size: 30px;\n    }\n\n    .stat-title {\n        font-size: 13px;\n        font-weight: 600;\n        color: #777;\n    }\n\n    .stat-value {\n        margin-top: 4px;\n        font-size: 34px;\n        font-weight: 700;\n    }\n\n    .stat-subtitle {\n        margin-top: 2px;\n        font-size: 11px;\n        color: #999;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 960,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96a2c129a0a04b72",
+        "type": "ui_template",
+        "z": "8d56405365d8f659",
+        "group": "ed71895b6885dd71",
+        "name": "Offline Devices",
+        "order": 4,
+        "width": "10",
+        "height": "3",
+        "format": "<div class=\"stat-card\">\n    <div class=\"stat-icon\">🔴</div>\n    <div class=\"stat-content\">\n        <div class=\"stat-title\">OFFLINE</div>\n        <div class=\"stat-value\">{{msg.payload.offline}}</div>\n       \n    </div>\n</div>\n\n<style>\n    .stat-card {\n        height: 125px;\n        padding: 20px;\n        box-sizing: border-box;\n        border-radius: 18px;\n        background: white;\n        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);\n        display: flex;\n        align-items: center;\n        gap: 16px;\n    }\n\n    .stat-icon {\n        font-size: 30px;\n    }\n\n    .stat-title {\n        font-size: 13px;\n        font-weight: 600;\n        color: #777;\n    }\n\n    .stat-value {\n        margin-top: 4px;\n        font-size: 34px;\n        font-weight: 700;\n    }\n\n    .stat-subtitle {\n        margin-top: 2px;\n        font-size: 11px;\n        color: #999;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 960,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "492580e85807174c",
+        "type": "inject",
+        "z": "8d56405365d8f659",
+        "name": "Refresh Device Status",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "69ccc843ebeebb40"
+            ]
+        ]
+    },
+    {
+        "id": "80993bb18411c8f8",
+        "type": "mqtt in",
+        "z": "8d56405365d8f659",
+        "name": "",
+        "topic": "factory/device/+/data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "60d5affeb27cea8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 940,
+        "wires": [
+            [
+                "a58904ec97c62f61"
+            ]
+        ]
+    },
+    {
+        "id": "a58904ec97c62f61",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "GET DEVICE ID",
+        "func": "if (!msg.payload || !msg.payload.device_id) {\n    node.warn(\"Missing device_id\");\n    return null;\n}\n\nmsg.device_id = msg.payload.device_id;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 940,
+        "wires": [
+            [
+                "6f9d41673adb11c8"
+            ]
+        ]
+    },
+    {
+        "id": "6f9d41673adb11c8",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "Register / Update Device",
+        "func": "if (!msg.device_id) {\n    node.warn(\"Missing device_id\");\n    return null;\n}\n\n// Device ID được tạo từ MAC nên chỉ cho phép HEX\nif (!/^[0-9A-Fa-f]{12}$/.test(msg.device_id)) {\n    node.warn(\"Invalid device_id: \" + msg.device_id);\n    return null;\n}\n\nmsg.topic = `\nINSERT INTO devices\n(device_id, machine_name, status, last_seen)\nVALUES\n(\n    '${msg.device_id}',\n    CONCAT(\n        'machine',\n        LPAD(\n            (\n                SELECT COALESCE(MAX(num), 0) + 1\n                FROM (\n                    SELECT CAST(SUBSTRING(machine_name, 8) AS UNSIGNED) AS num\n                    FROM devices\n                    WHERE machine_name REGEXP '^machine[0-9]+$'\n                ) AS t\n            ),\n            2,\n            '0'\n        )\n    ),\n    'online',\n    NOW()\n)\nON DUPLICATE KEY UPDATE\nstatus = 'online',\nlast_seen = NOW()\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 940,
+        "wires": [
+            [
+                "7b63caeb04cc5022"
+            ]
+        ]
+    },
+    {
+        "id": "7b63caeb04cc5022",
+        "type": "mysql",
+        "z": "8d56405365d8f659",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 990,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a93a1797a77c846",
+        "type": "inject",
+        "z": "8d56405365d8f659",
+        "name": "Refresh Device Status",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 1020,
+        "wires": [
+            [
+                "5cc2152947a255e4"
+            ]
+        ]
+    },
+    {
+        "id": "5cc2152947a255e4",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "check offline",
+        "func": "msg.topic = `\nUPDATE devices\nSET status = 'offline'\nWHERE status = 'online'\n  AND last_seen < NOW() - INTERVAL 15 SECOND\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1020,
+        "wires": [
+            [
+                "a5d651e93ef2f519"
+            ]
+        ]
+    },
+    {
+        "id": "a5d651e93ef2f519",
+        "type": "mysql",
+        "z": "8d56405365d8f659",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 830,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74621837062ec130",
+        "type": "http in",
+        "z": "8d56405365d8f659",
+        "name": "update machine name api",
+        "url": "/api/devices/name",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 1180,
+        "wires": [
+            [
+                "377e2443951476e8"
+            ]
+        ]
+    },
+    {
+        "id": "45262c271ed503de",
+        "type": "http response",
+        "z": "8d56405365d8f659",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "377e2443951476e8",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "update machine name",
+        "func": "const body = msg.payload;\n\nif (!body || typeof body !== \"object\") {\n  msg.statusCode = 400;\n  msg.payload = {\n    success: false,\n    message: \"Invalid JSON body\"\n  };\n  return msg;\n}\n\nconst device_id = body.device_id;\nconst machine_name = body.machine_name;\n\nif (!device_id || !machine_name) {\n  msg.statusCode = 400;\n  msg.payload = {\n    success: false,\n    message: \"device_id and machine_name are required\"\n  };\n  return msg;\n}\n\nif (!/^[0-9A-Fa-f]{12}$/.test(device_id)) {\n  msg.statusCode = 400;\n  msg.payload = {\n    success: false,\n    message: \"Invalid device_id\"\n  };\n  return msg;\n}\n\nif (typeof machine_name !== \"string\" ||\n  machine_name.length < 1 ||\n  machine_name.length > 50) {\n\n  msg.statusCode = 400;\n  msg.payload = {\n    success: false,\n    message: \"Invalid machine_name\"\n  };\n  return msg;\n}\n\nconst safeDeviceId = device_id.replace(/'/g, \"''\");\nconst safeMachineName = machine_name.replace(/'/g, \"''\");\n\nmsg.topic =\n  \"UPDATE devices \" +\n  \"SET machine_name = '\" + safeMachineName + \"' \" +\n  \"WHERE device_id = '\" + safeDeviceId + \"';\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1180,
+        "wires": [
+            [
+                "7692a8437a4b237a"
+            ]
+        ]
+    },
+    {
+        "id": "7692a8437a4b237a",
+        "type": "mysql",
+        "z": "8d56405365d8f659",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 690,
+        "y": 1180,
+        "wires": [
+            [
+                "8fb4ba3288d5dae8"
+            ]
+        ]
+    },
+    {
+        "id": "8fb4ba3288d5dae8",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "HTTP Result",
+        "func": "msg.statusCode = 200;\n\nmsg.payload = {\n  success: true,\n  message: \"Machine name updated successfully\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1180,
+        "wires": [
+            [
+                "45262c271ed503de"
+            ]
+        ]
+    },
+    {
+        "id": "4a618da66fed536a",
+        "type": "ui_template",
+        "z": "8d56405365d8f659",
+        "group": "ed71895b6885dd71",
+        "name": "device status",
+        "order": 6,
+        "width": "30",
+        "height": "6",
+        "format": "<div class=\"device-status\">\n\n    <div class=\"section-title\">\n        DEVICE STATUS\n    </div>\n\n    <div class=\"table-wrapper\">\n\n        <table>\n\n            <thead>\n                <tr>\n                    <th>Device ID</th>\n                    <th>Machine Name</th>\n                    <th>Status</th>\n                    <th>Last Seen</th>\n                    <th>Action</th>\n                </tr>\n            </thead>\n\n            <tbody id=\"deviceStatusTable\">\n            </tbody>\n\n        </table>\n\n    </div>\n\n</div>\n\n\n<style>\n    .device-status {\n        width: 100%;\n        box-sizing: border-box;\n        font-family: Arial, sans-serif;\n    }\n\n    .section-title {\n        font-size: 18px;\n        font-weight: bold;\n        margin-bottom: 15px;\n    }\n\n    .table-wrapper {\n        width: 100%;\n        overflow-x: auto;\n    }\n\n    table {\n        width: 100%;\n        border-collapse: collapse;\n        font-size: 14px;\n    }\n\n    th {\n        text-align: left;\n        padding: 12px;\n        font-weight: bold;\n        border-bottom: 1px solid rgba(128, 128, 128, 0.35);\n    }\n\n    td {\n        padding: 10px 12px;\n        border-bottom: 1px solid rgba(128, 128, 128, 0.2);\n    }\n\n    .name-input {\n        width: 130px;\n        padding: 6px 8px;\n        border: 1px solid #ccc;\n        border-radius: 5px;\n        font-size: 14px;\n    }\n\n    .save-btn {\n        padding: 6px 12px;\n        border: none;\n        border-radius: 5px;\n        cursor: pointer;\n        font-size: 13px;\n    }\n\n    .status-online {\n        font-weight: bold;\n    }\n\n    .status-offline {\n        font-weight: bold;\n    }\n</style>\n\n\n<script>\n    (function(scope) {\n\n    // ==========================================\n    // NHẬN DỮ LIỆU TRỰC TIẾP TỪ MYSQL\n    // ==========================================\n\n    scope.$watch('msg', function(msg) {\n\n        if (!msg || !Array.isArray(msg.payload)) {\n            return;\n        }\n\n        const devices = msg.payload;\n\n        const table =\n            document.getElementById(\"deviceStatusTable\");\n\n        if (!table) {\n            return;\n        }\n\n        table.innerHTML = \"\";\n\n        devices.forEach(function(device) {\n\n            const row =\n                document.createElement(\"tr\");\n\n            const machine =\n                device.machine_name || \"\";\n\n            const isOnline =\n                String(device.status || \"\")\n                    .trim()\n                    .toLowerCase() === \"online\";\n\n            const statusText =\n                isOnline\n                    ? \"🟢 ONLINE\"\n                    : \"🔴 OFFLINE\";\n\n            const statusClass =\n                isOnline\n                    ? \"status-online\"\n                    : \"status-offline\";\n\n\n            row.innerHTML = `\n\n                <td>\n                    ${device.device_id}\n                </td>\n\n                <td>\n                    <input\n                        class=\"name-input\"\n                        id=\"name-${device.device_id}\"\n                        value=\"${machine}\"\n                        placeholder=\"Machine name\"\n                    >\n                </td>\n\n                <td class=\"${statusClass}\">\n                    ${statusText}\n                </td>\n\n                <td>\n                    ${device.last_seen || \"-\"}\n                </td>\n\n                <td>\n                    <button\n                        class=\"save-btn\"\n                        onclick=\"saveMachineName('${device.device_id}')\">\n                        Save\n                    </button>\n                </td>\n\n            `;\n\n            table.appendChild(row);\n\n        });\n\n    });\n\n\n    // ==========================================\n    // SAVE MACHINE NAME\n    // GIỮ NGUYÊN GỌI API\n    // ==========================================\n\n    window.saveMachineName = function(deviceId) {\n\n        const input =\n            document.getElementById(\n                \"name-\" + deviceId\n            );\n\n        if (!input) {\n            return;\n        }\n\n        const machineName =\n            input.value.trim();\n\n        if (!machineName) {\n\n            alert(\n                \"Machine name cannot be empty\"\n            );\n\n            return;\n        }\n\n\n        fetch(\n            \"http://180.93.228.86:3000/api/devices/name\",\n            {\n                method: \"POST\",\n\n                headers: {\n                    \"Content-Type\":\n                        \"application/json\",\n\n                    \"Authorization\":\n                        \"Bearer \" +\n                        sessionStorage.getItem(\n                            \"water_token\"\n                        )\n                },\n\n                body: JSON.stringify({\n\n                    device_id:\n                        deviceId,\n\n                    machine_name:\n                        machineName\n\n                })\n            }\n        )\n\n        .then(response =>\n            response.json()\n        )\n\n        .then(result => {\n\n            if (result.success) {\n\n                alert(\n                    \"Machine name updated successfully\"\n                );\n\n            } else {\n\n                alert(\n                    result.message ||\n                    \"Update failed\"\n                );\n\n            }\n\n        })\n\n        .catch(error => {\n\n            console.error(error);\n\n            alert(\n                \"Cannot connect to server\"\n            );\n\n        });\n\n    };\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "Device Status",
+        "x": 1010,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70dbc84992cee7a8",
+        "type": "debug",
+        "z": "8d56405365d8f659",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6406e795d998ea54",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "mysql",
+        "func": "msg.topic = `\nSELECT device_id, machine_name, status, last_seen\nFROM devices\nORDER BY machine_name ASC\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "b5ca0fb34c27dac0"
+            ]
+        ]
+    },
+    {
+        "id": "69ccc843ebeebb40",
+        "type": "function",
+        "z": "8d56405365d8f659",
+        "name": "mysql",
+        "func": "msg.topic = `\nSELECT device_id, machine_name, status, last_seen\nFROM devices\nORDER BY machine_name ASC\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 820,
+        "wires": [
+            [
+                "7cfa8853693962f2"
+            ]
+        ]
+    },
+    {
+        "id": "b5ca0fb34c27dac0",
+        "type": "mysql",
+        "z": "8d56405365d8f659",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "9e0f6d1d62408353"
+            ]
+        ]
+    },
+    {
+        "id": "7cfa8853693962f2",
+        "type": "mysql",
+        "z": "8d56405365d8f659",
+        "mydb": "872554351ffee59e",
+        "name": "water_mysql",
+        "x": 770,
+        "y": 820,
+        "wires": [
+            [
+                "4a618da66fed536a"
+            ]
+        ]
+    },
+    {
+        "id": "3f0f3a0ce247ab01",
+        "type": "ui_template",
+        "z": "1c47f702e1aae6d5",
+        "group": "0cbe89ca202dcbde",
+        "name": "admin",
+        "order": 1,
+        "width": "30",
+        "height": "10",
+        "format": "<div class=\"admin-company\">\n\n    <h2>COMPANY MANAGEMENT</h2>\n\n    <div class=\"create-box\">\n\n        <input\n            id=\"companyName\"\n            type=\"text\"\n            placeholder=\"Company Name\"\n        >\n\n        <input\n            id=\"companyUsername\"\n            type=\"text\"\n            placeholder=\"Username\"\n        >\n\n        <input\n            id=\"companyPassword\"\n            type=\"password\"\n            placeholder=\"Password\"\n        >\n\n        <button onclick=\"createCompany()\">\n            CREATE COMPANY\n        </button>\n\n    </div>\n\n    <div id=\"companyMessage\"></div>\n\n    <table>\n\n        <thead>\n            <tr>\n                <th>ID</th>\n                <th>Company</th>\n                <th>Username</th>\n            </tr>\n        </thead>\n\n        <tbody id=\"companyTable\">\n        </tbody>\n\n    </table>\n\n</div>\n\n\n<style>\n    .admin-company {\n        width: 100%;\n        padding: 10px;\n        box-sizing: border-box;\n        font-family: Arial, sans-serif;\n    }\n\n    .admin-company h2 {\n        margin: 0 0 20px 0;\n        font-size: 22px;\n    }\n\n    .create-box {\n        display: flex;\n        gap: 10px;\n        margin-bottom: 20px;\n    }\n\n    .create-box input {\n        padding: 10px;\n        width: 200px;\n        box-sizing: border-box;\n    }\n\n    .create-box button {\n        padding: 10px 18px;\n        border: none;\n        cursor: pointer;\n    }\n\n    #companyMessage {\n        margin-bottom: 15px;\n    }\n\n    .admin-company table {\n        width: 100%;\n        border-collapse: collapse;\n    }\n\n    .admin-company th,\n    .admin-company td {\n        text-align: left;\n        padding: 12px;\n        border-bottom: 1px solid #ddd;\n    }\n\n    .admin-company th {\n        font-weight: bold;\n    }\n</style>\n\n\n<script>\n    (function(scope) {\n\n    const API =\n        \"http://180.93.228.86:3000\";\n\n\n    function getToken() {\n\n        return sessionStorage.getItem(\n            \"water_token\"\n        );\n\n    }\n\n\n    window.createCompany = function() {\n\n        const companyName =\n            document.getElementById(\n                \"companyName\"\n            ).value.trim();\n\n        const username =\n            document.getElementById(\n                \"companyUsername\"\n            ).value.trim();\n\n        const password =\n            document.getElementById(\n                \"companyPassword\"\n            ).value;\n\n\n        if (\n            !companyName ||\n            !username ||\n            !password\n        ) {\n\n            alert(\n                \"Vui lòng nhập đầy đủ thông tin\"\n            );\n\n            return;\n\n        }\n\n\n        fetch(\n            API + \"/api/admin/companies\",\n            {\n                method: \"POST\",\n\n                headers: {\n                    \"Content-Type\":\n                        \"application/json\",\n\n                    \"Authorization\":\n                        \"Bearer \" +\n                        getToken()\n                },\n\n                body: JSON.stringify({\n\n                    company_name:\n                        companyName,\n\n                    username:\n                        username,\n\n                    password:\n                        password\n\n                })\n            }\n        )\n\n        .then(response =>\n            response.json()\n        )\n\n        .then(data => {\n\n            if (data.success) {\n\n                document.getElementById(\n                    \"companyName\"\n                ).value = \"\";\n\n                document.getElementById(\n                    \"companyUsername\"\n                ).value = \"\";\n\n                document.getElementById(\n                    \"companyPassword\"\n                ).value = \"\";\n\n                document.getElementById(\n                    \"companyMessage\"\n                ).innerText =\n                    \"Tạo công ty thành công\";\n\n                loadCompanies();\n\n            } else {\n\n                alert(\n                    data.message ||\n                    \"Tạo công ty thất bại\"\n                );\n\n            }\n\n        })\n\n        .catch(error => {\n\n            console.error(error);\n\n            alert(\n                \"Không kết nối được API\"\n            );\n\n        });\n\n    };\n\n\n    function loadCompanies() {\n\n        const token =\n            getToken();\n\n        if (!token) {\n            return;\n        }\n\n\n        fetch(\n            API + \"/api/admin/companies\",\n            {\n                method: \"GET\",\n\n                headers: {\n                    \"Authorization\":\n                        \"Bearer \" + token\n                }\n            }\n        )\n\n        .then(response =>\n            response.json()\n        )\n\n        .then(data => {\n\n            if (\n                !data.success ||\n                !Array.isArray(\n                    data.companies\n                )\n            ) {\n                return;\n            }\n\n\n            const table =\n                document.getElementById(\n                    \"companyTable\"\n                );\n\n            table.innerHTML = \"\";\n\n\n            data.companies.forEach(\n                company => {\n\n                    const row =\n                        document.createElement(\n                            \"tr\"\n                        );\n\n                    row.innerHTML = `\n\n                        <td>\n                            ${company.id}\n                        </td>\n\n                        <td>\n                            ${company.company_name}\n                        </td>\n\n                        <td>\n                            ${company.username || \"-\"}\n                        </td>\n\n                    `;\n\n                    table.appendChild(row);\n\n                }\n            );\n\n        })\n\n        .catch(error => {\n\n            console.error(\n                \"Load companies error:\",\n                error\n            );\n\n        });\n\n    }\n\n\n    loadCompanies();\n\n\n})(scope);\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1fea33d5755862b",
+        "type": "mqtt in",
+        "z": "294be529a92a6361",
+        "name": "",
+        "topic": "factory/device/wifi/scan/result",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "60d5affeb27cea8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "49add55faa214703",
+                "56c47daf5c4022e5"
+            ]
+        ]
+    },
+    {
+        "id": "49add55faa214703",
+        "type": "json",
+        "z": "294be529a92a6361",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "41065351b22d4662"
+            ]
+        ]
+    },
+    {
+        "id": "95c9ae8034629ef8",
+        "type": "ui_template",
+        "z": "294be529a92a6361",
+        "group": "ed71895b6885dd71",
+        "name": "",
+        "order": 2,
+        "width": "30",
+        "height": "3",
+        "format": "<div id=\"wifi-box\">\n\n    <div style=\"font-size:20px;font-weight:bold;margin-bottom:15px;\">\n        WiFi khả dụng\n    </div>\n\n    <div id=\"wifi-items\">\n        Đang chờ dữ liệu WiFi...\n    </div>\n\n    <div id=\"wifi-password\" style=\"display:none;margin-top:20px;\">\n\n        <div id=\"selected-wifi\" style=\"font-weight:bold;margin-bottom:10px;\">\n        </div>\n\n        <input id=\"wifi-pass\"\n               type=\"password\"\n               placeholder=\"Nhập mật khẩu WiFi\"\n               style=\"\n                   width:100%;\n                   padding:10px;\n                   box-sizing:border-box;\n                   margin-bottom:10px;\n               \">\n\n        <button id=\"wifi-connect\"\n                style=\"\n                    padding:10px 20px;\n                    cursor:pointer;\n                \">\n            Kết nối\n        </button>\n\n    </div>\n\n</div>\n\n<script>\n    (function(scope) {\n\n    scope.$watch('msg', function(msg) {\n\n        if (!msg || !msg.payload) return;\n\n        let data = msg.payload;\n\n        if (typeof data === \"string\") {\n            try {\n                data = JSON.parse(data);\n            } catch(e) {\n                return;\n            }\n        }\n\n        if (!data || !Array.isArray(data.networks)) return;\n\n        const container =\n            document.getElementById(\"wifi-items\");\n\n        if (!container) return;\n\n        container.innerHTML = \"\";\n\n        data.networks.forEach(function(wifi) {\n\n            const item =\n                document.createElement(\"div\");\n\n            item.style.padding = \"12px\";\n            item.style.marginBottom = \"8px\";\n            item.style.border = \"1px solid #ccc\";\n            item.style.borderRadius = \"8px\";\n            item.style.cursor = \"pointer\";\n\n            item.innerHTML =\n                \"<b>\" + wifi.ssid + \"</b>\" +\n                \" — \" + wifi.rssi + \" dBm\";\n\n            item.onclick = function() {\n\n                document.getElementById(\n                    \"wifi-password\"\n                ).style.display = \"block\";\n\n                document.getElementById(\n                    \"selected-wifi\"\n                ).innerText =\n                    \"WiFi đã chọn: \" + wifi.ssid;\n\n                document.getElementById(\n                    \"wifi-pass\"\n                ).value = \"\";\n\n                window.selectedWifiSSID =\n                    wifi.ssid;\n            };\n\n            container.appendChild(item);\n        });\n\n    });\n\n    document.addEventListener(\n        \"click\",\n        function(e) {\n\n            if (e.target.id !== \"wifi-connect\")\n                return;\n\n            const ssid =\n                window.selectedWifiSSID;\n\n            const password =\n                document.getElementById(\n                    \"wifi-pass\"\n                ).value;\n\n            if (!ssid) {\n                alert(\"Chưa chọn WiFi\");\n                return;\n            }\n\n            if (!password) {\n                alert(\"Chưa nhập mật khẩu\");\n                return;\n            }\n\n            scope.send({\n                topic: \"wifi/config\",\n                payload: {\n                    ssid: ssid,\n                    password: password\n                }\n            });\n\n        }\n    );\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "f2d98931cc526054"
+            ]
+        ]
+    },
+    {
+        "id": "41065351b22d4662",
+        "type": "function",
+        "z": "294be529a92a6361",
+        "name": "function 1",
+        "func": "return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 300,
+        "wires": [
+            [
+                "95c9ae8034629ef8"
+            ]
+        ]
+    },
+    {
+        "id": "d8407e8ea2ca63de",
+        "type": "mqtt out",
+        "z": "294be529a92a6361",
+        "name": "",
+        "topic": "",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "60d5affeb27cea8a",
+        "x": 1390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f2d98931cc526054",
+        "type": "function",
+        "z": "294be529a92a6361",
+        "name": "Prepare WiFi Config",
+        "func": "const deviceId = \"7C2C67D36FB8\";\n\nif (!msg.payload || !msg.payload.ssid || !msg.payload.password) {\n    return null;\n}\n\nmsg.topic = `factory/device/${deviceId}/wifi/config`;\n\nmsg.payload = JSON.stringify({\n    ssid: msg.payload.ssid,\n    password: msg.payload.password\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 300,
+        "wires": [
+            [
+                "d8407e8ea2ca63de"
+            ]
+        ]
+    },
+    {
+        "id": "ef1e44db9078ce50",
+        "type": "function",
+        "z": "294be529a92a6361",
+        "name": "Xóa WiFi",
+        "func": "const deviceId = \"7C2C67D36FB8\";\n\nmsg.topic = `factory/device/${deviceId}/wifi/config`;\n\nmsg.payload = JSON.stringify({\n    action: \"delete\"\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "07cb8fe2569d25fb"
+            ]
+        ]
+    },
+    {
+        "id": "07cb8fe2569d25fb",
+        "type": "mqtt out",
+        "z": "294be529a92a6361",
+        "name": "",
+        "topic": "",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "60d5affeb27cea8a",
+        "x": 710,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "56c47daf5c4022e5",
+        "type": "debug",
+        "z": "294be529a92a6361",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    }
+]

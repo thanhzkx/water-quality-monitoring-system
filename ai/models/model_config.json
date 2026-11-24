@@ -1,0 +1,14 @@
+{
+    "model": "Sliding Window Autoencoder",
+    "window_size": 10,
+    "features": [
+        "temperature",
+        "ph",
+        "turbidity"
+    ],
+    "threshold": 0.36532035,
+    "threshold_method": "99th percentile of validation reconstruction error",
+    "latent_dimension": 4,
+    "parameters": 2610,
+    "framework": "TensorFlow/Keras"
+}

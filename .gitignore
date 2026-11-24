@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+managed_components/
+__pycache__/
+.venv/
+venv/
+
+# Security
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+passwd
+password_file
+flows_cred.json
+.config.*.json
+
+# Database
+*.sql
+!database/schema.sql
+*.db
+*.sqlite
+**/mysql/data/
+
+# Backups
+**/data_backup_*/
+*.bak
+*.save
+*.zip
+*.tar.gz
+
+# Build and logs
+build/
+*.log
+.ipynb_checkpoints/
+sdkconfig.old
+
+# Private datasets
+data/raw/
+# MySQL runtime data
+infrastructure/mysql/*
+!infrastructure/mysql/*.cnf
+!infrastructure/mysql/conf.d/
+!infrastructure/mysql/conf.d/**
+
+# MySQL binary logs
+binlog.*
+mysql-bin.*
+*.ibd
+*.ibu
+*.frm
+ibdata*
+ibtmp*
+undo_*
+#innodb_redo/
+#innodb_temp/
+
+# Database runtime
+*.pid
+*.sock
+*.sock.lock

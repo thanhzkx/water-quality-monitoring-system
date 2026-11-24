@@ -1,0 +1,5 @@
+Method,Precision,Recall,F1,Normal_FPR
+Statistical Baseline,0.6753246753246753,1.0,0.8062016,83.7
+Isolation Forest,1.0,0.4423077,0.6133333,0.0
+Autoencoder,1.0,0.8076923,0.893617,1.09
+LSTM-Autoencoder,0.6842105,1.0,0.8125,66.3

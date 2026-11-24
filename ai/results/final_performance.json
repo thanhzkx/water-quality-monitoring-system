@@ -1,0 +1,24 @@
+{
+    "model": "Autoencoder",
+    "threshold": 0.0757594647746687,
+    "window_size": 10,
+    "features": [
+        "temperature",
+        "ph",
+        "turbidity"
+    ],
+    "parameters": 2610,
+    "model_size_kb": 78.228515625,
+    "scaler_size_kb": 0.8896484375,
+    "config_size_kb": 0.1982421875,
+    "normal_fpr_percent": 1.0869565217391304,
+    "precision": 1.0,
+    "recall": 0.8076923076923077,
+    "f1_score": 0.8936170212765957,
+    "accuracy": 0.8913043478260869,
+    "average_inference_ms": 100.99729782624586,
+    "median_inference_ms": 79.6606999974756,
+    "p95_inference_ms": 199.87990500230808,
+    "ram_before_mb": 205.87890625,
+    "ram_after_mb": 180.8828125
+}

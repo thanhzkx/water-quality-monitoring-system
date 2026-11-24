@@ -1,0 +1,27 @@
+{
+    "model": "Autoencoder",
+    "window_size": 10,
+    "features": [
+        "temperature",
+        "ph",
+        "turbidity"
+    ],
+    "threshold": 1.1169416074975378,
+    "feature_weights": [
+        0.2,
+        0.4,
+        0.4
+    ],
+    "stuck_min_length": 5,
+    "stuck_eps": {
+        "temperature": 0.0,
+        "ph": 0.0,
+        "turbidity": 0.0
+    },
+    "input_shape": [
+        null,
+        10,
+        3
+    ],
+    "parameters": 2610
+}
