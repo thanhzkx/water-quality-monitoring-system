@@ -143,6 +143,7 @@ Roadmap
 - [ ] On-device performance benchmarking
 - [ ] Automated testing
 - [ ] Complete technical documentation
+
 Author
 Nguyen Minh Thanh —  Ho Chi Minh City University of Technology (HCMUT).
 
